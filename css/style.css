@@ -80,7 +80,7 @@ li {
   margin: 2px;
 }
 
-a {
+.circle {
   color: white;
   display: table-cell;
   vertical-align: middle; 
@@ -92,13 +92,31 @@ a {
   border: 1px solid white;
 }
 
-a:hover {
+.circle:hover {
   background-color: white;
   color: hsl(257, 40%, 49%);
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 30px 35px;
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+
+.attribution a {
+  color: white;
+}
+
+.attribution a:hover {
+  text-decoration: none;
 }
 
 /*styles for larger screens*/
@@ -157,10 +175,21 @@ footer {
   p {
     font-size: 1.05rem;
   }
-  
+  /*footer*/
   footer {
     position: absolute;
     bottom: 2px;
-    right: 0;
+    right: -10px;
+  }
+
+  ul {
+    position: relative;
+    left: 155px;
+  }
+
+  .attribution {
+    position: relative;
+    top: 30px;
+    right: 80%;
   }
 }
